@@ -37,7 +37,7 @@ content = [
 categories = get_subfolders(addon)
 categories.sort(key=lambda x: x.name.upper())
 for cat in categories:
-   content.extend([f'\t\tclass {cat.name}', "\t\t{"])
+   content.extend([f'\t\tclass {cat.name}', "\t\t{", f"\t\t\tfile = QPATHOF({cat.name});"])
    # Get all functions from the files
    function_files = [f.stem.replace('fn_', '') for f in cat.iterdir() if f.is_file() and f.name.startswith('fn_')]
    function_files.sort(key=lambda x: x.upper())
