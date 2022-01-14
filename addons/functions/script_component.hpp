@@ -1,7 +1,7 @@
 #define COMPONENT functions
-#include "script_mod.hpp"
+#include "\x\biki\addons\main\script_mod.hpp"
 
-#ifdef DEBUG_ENABLED_MAIN
+#ifdef DEBUG_ENABLED_FUNCTIONS
 	#define DEBUG_MODE_FULL
 #endif
 
@@ -9,4 +9,4 @@
 	#define DEBUG_SETTINGS DEBUG_SETTINGS_MAIN
 #endif
 
-#include "script_macros.hpp"
+#include "\x\biki\addons\main\script_macros.hpp"
