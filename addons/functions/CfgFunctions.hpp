@@ -27,6 +27,7 @@ class CfgFunctions
 			class exportDLCRestrictions;
 			class exportHitpoints;
 			class exportInputActions;
+			class exportModules;
 			class exportShootingTargets;
 		};
 	};
