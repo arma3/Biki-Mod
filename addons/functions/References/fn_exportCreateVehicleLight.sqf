@@ -16,7 +16,7 @@ Author:
 private _result = "";
 "if (getNumber (_x >> 'scope') > 0) then
 {
-	_result = format ["%1* %2\n", _result, configName _x];
+	_result = format [""%1* %2\n"", _result, configName _x];
 }" configClasses (configFile >> "CfgVehicles");
 copyToClipboard _result;
 _result;
