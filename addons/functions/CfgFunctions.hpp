@@ -28,6 +28,7 @@ class CfgFunctions
 			class exportHitpoints;
 			class exportInputActions;
 			class exportModules;
+			class exportNearestTerrainObjectsCounts;
 			class exportShootingTargets;
 		};
 	};
