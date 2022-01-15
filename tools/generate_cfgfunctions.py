@@ -24,10 +24,6 @@ print(f"Building CfgFunctions for addon \"{addon.name}\"...")
 
 file_cfg = addon / 'CfgFunctions.hpp'
 content = [
-        "#ifdef DEBUG_ENABLED_FULL",
-        "allowFunctionsRecompile = 1;",
-        "allowFunctionsLog = 1;",
-        "#endif",
         "class CfgFunctions",
         "{",
         f"\tclass {tag}",
@@ -37,7 +33,7 @@ content = [
 categories = get_subfolders(addon)
 categories.sort(key=lambda x: x.name.upper())
 for cat in categories:
-   content.extend([f'\t\tclass {cat.name}', "\t\t{", f"\t\t\tfile = QPATHOF({cat.name});"])
+   content.extend([f'\t\tclass {cat.name}', "\t\t{", f"\t\t\tfile = QPATHTOF({cat.name});"])
    # Get all functions from the files
    function_files = [f.stem.replace('fn_', '') for f in cat.iterdir() if f.is_file() and f.name.startswith('fn_')]
    function_files.sort(key=lambda x: x.upper())
