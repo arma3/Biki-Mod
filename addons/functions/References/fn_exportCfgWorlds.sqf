@@ -13,7 +13,7 @@ Examples:
 Author:
 	Killzone_Kid
 ---------------------------------------------------------------------------- */
-if ((configName _x) select [0, 5] == 'group') then
+"if ((configName _x) select [0, 5] == 'group') then
 {
 	diag_log ('%' + configName _x);
 	for '_i' from 0 to count _x - 1 do {
