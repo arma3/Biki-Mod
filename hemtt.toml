@@ -3,6 +3,9 @@ prefix = "biki"
 author = "BIKI Contributors"
 mainprefix = "x"
 
-file = [
-	"*.dll"
+files = [
+	"*.dll",
+	"mod.cpp",
+	"README.md",
+	"LICENSE.md"
 ]
