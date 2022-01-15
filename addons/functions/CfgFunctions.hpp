@@ -11,6 +11,7 @@ class CfgFunctions
 		{
 			file = QPATHTOF(References);
 			class exportArma3CfgFunctions;
+			class exportCfgMarkerColors;
 			class exportCfgMarkers;
 		};
 	};
