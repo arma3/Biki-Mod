@@ -19,6 +19,7 @@ class CfgFunctions
 			class exportCfgMarkerColors;
 			class exportCfgMarkers;
 			class exportCfgMusic;
+			class exportDisplay3denIDCs;
 		};
 	};
 };
