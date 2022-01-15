@@ -24,6 +24,7 @@ class CfgFunctions
 			class exportDisplay3denIDCs;
 			class exportDLCRestrictions;
 			class exportHitpoints;
+			class exportShootingTargets;
 		};
 	};
 };
