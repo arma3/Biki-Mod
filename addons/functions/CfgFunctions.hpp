@@ -22,6 +22,7 @@ class CfgFunctions
 			class exportCreateVehicleHeavy;
 			class exportCreateVehicleLight;
 			class exportDisplay3denIDCs;
+			class exportDLCRestrictions;
 			class exportHitpoints;
 		};
 	};
