@@ -13,6 +13,7 @@ class CfgFunctions
 			class exportArma3CfgFunctions;
 			class exportCfgMarkerColors;
 			class exportCfgMarkers;
+			class exportCfgMusic;
 		};
 	};
 };
