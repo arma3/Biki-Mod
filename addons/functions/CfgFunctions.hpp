@@ -20,6 +20,7 @@ class CfgFunctions
 			class exportCfgMarkers;
 			class exportCfgMusic;
 			class exportDisplay3denIDCs;
+			class exportHitpoints;
 		};
 	};
 };
