@@ -20,6 +20,7 @@ class CfgFunctions
 			class exportCfgMarkerColors;
 			class exportCfgMarkers;
 			class exportCfgMusic;
+			class exportCfgWorlds;
 			class exportCreateVehicleHeavy;
 			class exportCreateVehicleLight;
 			class exportDisplay3denIDCs;
