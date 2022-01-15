@@ -19,6 +19,8 @@ class CfgFunctions
 			class exportCfgMarkerColors;
 			class exportCfgMarkers;
 			class exportCfgMusic;
+			class exportCreateVehicleHeavy;
+			class exportCreateVehicleLight;
 			class exportDisplay3denIDCs;
 			class exportHitpoints;
 		};
