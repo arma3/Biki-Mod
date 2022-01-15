@@ -2,6 +2,11 @@ class CfgFunctions
 {
 	class BIKI
 	{
+		class Config
+		{
+			file = QPATHTOF(Config);
+			class configDifficultySettings;
+		};
 		class Images
 		{
 			file = QPATHTOF(Images);

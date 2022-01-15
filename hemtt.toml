@@ -2,3 +2,7 @@ name = "BIKI"
 prefix = "biki"
 author = "BIKI Contributors"
 mainprefix = "x"
+
+file = [
+	"*.dll"
+]
