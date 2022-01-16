@@ -1,0 +1,2 @@
+class ctrlStatic;
+class ctrlStructuredText;
