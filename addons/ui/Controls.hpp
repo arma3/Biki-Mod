@@ -1,2 +1,10 @@
 class ctrlStatic;
+class ctrlStaticBackground;
+class ctrlStaticBackgroundDisable;
+class ctrlStaticBackgroundDisableTiles;
+class ctrlStaticTitle;
+class ctrlStaticFooter;
 class ctrlStructuredText;
+class ctrlButtonCancel;
+class ctrlControlsGroup;
+class ctrlControlsGroupNoHScrollbars;

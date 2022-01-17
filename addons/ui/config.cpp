@@ -16,6 +16,6 @@ class CfgPatches
 	};
 };
 
-#include "\a3\3den\UI\macros.inc"
 #include "CfgScriptPaths.hpp"
 #include "Controls.hpp"
+#include "RscDisplayBikiHelp.hpp"

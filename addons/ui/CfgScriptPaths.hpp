@@ -1,4 +1,4 @@
 class CfgScriptPaths
 {
-	BIKI = PATHTOF(scripts);
+	BIKI = PATHTOF(scripts\);
 };
