@@ -7,6 +7,13 @@ class CfgFunctions
 			file = QPATHTOF(Config);
 			class configDifficultySettings;
 		};
+		class Functions
+		{
+			file = QPATHTOF(Functions);
+			class getFunctionHeader;
+			class getFunctionSection;
+			class parseFunctionHeader;
+		};
 		class Images
 		{
 			file = QPATHTOF(Images);
@@ -30,6 +37,11 @@ class CfgFunctions
 			class exportModules;
 			class exportNearestTerrainObjectsCounts;
 			class exportShootingTargets;
+		};
+		class Strings
+		{
+			file = QPATHTOF(Strings);
+			class regexFirstMatch;
 		};
 	};
 };
