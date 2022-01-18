@@ -4,12 +4,13 @@ Description:
 	Returns a section from a function header. Function header is expected to be
 	in the same format as this function.
 Parameters:
-	__VAR__ - __DESCRIPTION___ <__TYPES__>
+	_str - The function name or header <STRING>
+	_section - The section's name to extract <STRING>
 Returns:
-	__VAR__ - __DESCRIPTION___ <__TYPE__>
+	_content - The section's content <STRING>
 Examples:
 	(begin example)
-		_section = ["BIKI_fnc_getFunctionSection", "Author"] call BIKI_fnc_getFunctionSection;
+		_content = ["BIKI_fnc_getFunctionSection", "Author"] call BIKI_fnc_getFunctionSection;
 		// ==> "Terra"
 	(end)
 Author:
