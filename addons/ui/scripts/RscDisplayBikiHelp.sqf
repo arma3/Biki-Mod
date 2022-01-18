@@ -8,24 +8,17 @@ switch _mode do {
 		{
 			{
 				private _fncName = format ["BIKI_fnc_%1", configName _x];
-				private _fnc = missionNamespace getVariable _fncName;
-				(_fncName call BIS_fnc_functionMeta) params ["_fileLocation"];
-				private _fncContent = loadFile _fileLocation;
-				diag_log [_fncName, _fileLocation];
-				private _fncHeader = _fncContent
-					regexFind ["\/\*\ -{76}.*-{76}\ \*\//", 0]
-					param [0, []]
-					param [0, []]
-					param [0, ""]
-					regexReplace ["\n/g", "<br/>"]
+				diag_log _fncName;
+				private _fncHeader = _fncName call BIKI_fnc_getFunctionHeader
+					regexReplace ["</g", "&lt;"]
+					regexReplace [">/g", "&gt;"]
+					regexReplace [endl + "/g", "<br/>"]
 					regexReplace ["\t/g", "    "];
 				private _yPos = 0;
-				diag_log allControls _ctrlFunctionsList;
 				{
 					private _h = ctrlPosition _x select 3;
 					_yPos = _yPos + _h + GRID_H;
 				} forEach (allControls _ctrlFunctionsList);
-				diag_log _yPos;
 				private _ctrlHeader = _display ctrlCreate ["ctrlStructuredText", -1, _ctrlFunctionsList];
 				_ctrlHeader ctrlSetPosition [
 					1 * GRID_W,
