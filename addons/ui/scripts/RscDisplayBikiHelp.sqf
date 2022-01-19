@@ -1,6 +1,5 @@
 #include "..\script_component.hpp"
 params ["_mode", "_params"];
-diag_log _this;
 switch _mode do {
 	case "onLoad":{
 		_params params ["_display"];
@@ -8,7 +7,6 @@ switch _mode do {
 		{
 			{
 				private _fncName = format ["BIKI_fnc_%1", configName _x];
-				diag_log _fncName;
 				private _fncHeader = _fncName call BIKI_fnc_getFunctionHeader
 					regexReplace ["</g", "&lt;"]
 					regexReplace [">/g", "&gt;"]
