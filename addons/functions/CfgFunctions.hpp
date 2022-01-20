@@ -17,6 +17,7 @@ class CfgFunctions
 		class Helpers
 		{
 			file = QPATHTOF(Helpers);
+			class arrayToTable;
 			class lastUpdatedGVI;
 		};
 		class Images
