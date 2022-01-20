@@ -14,7 +14,7 @@ Examples:
 Author:
 	R3vo
 ---------------------------------------------------------------------------- */
-private _version = format ["Last updated: {{GVI|arma3|%1}}", productVersion # 2 / 100];
+private _version = [] call BIKI_fnc_lastUpdatedGVI;
 private _counter = 0;
 private _export = _version + endl + "{| class=""wikitable""" + endl + "! Module Name !! Category !! Addon !! Function !! Description" + endl + "|-" + endl;
 private _modules = "(configName inheritsFrom _x) == 'Module_F'" configClasses (configFile >> "CfgVehicles");

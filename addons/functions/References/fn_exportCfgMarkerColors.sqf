@@ -13,7 +13,7 @@ Examples:
 Author:
 	R3vo
 ---------------------------------------------------------------------------- */
-private _output = format ["Last updated: {{GVI|arma3|%1}}", (productVersion select 2) / 100] + endl;
+private _output = [] call BIKI_fnc_lastUpdatedGVI + endl;
 _output = _output + "{| class =""wikitable""" + endl + format ["|-%1! %2 !! %3",endl,"Config Name","RGBA"];
 {
 	private _colour = getArray (_x >> "color") call BIS_fnc_colorConfigToRGBA;

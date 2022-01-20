@@ -15,7 +15,7 @@ Examples:
 Author:
 	R3vo
 ---------------------------------------------------------------------------- */
-private _export = format ["Last updated: {{GVI|arma3|%1}}",productVersion # 2 / 100] + endl + "{| class=""wikitable sortable"" border=""1"" style=""border-collapse:collapse; font-size:100%;"" cellpadding=""0.5em""
+private _export = [] call BIKI_fnc_lastUpdatedGVI + endl + "{| class=""wikitable sortable"" border=""1"" style=""border-collapse:collapse; font-size:100%;"" cellpadding=""0.5em""
 ! Group
 ! Category
 ! Functions";

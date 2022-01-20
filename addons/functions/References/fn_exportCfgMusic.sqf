@@ -16,7 +16,7 @@ Author:
 ---------------------------------------------------------------------------- */
 _cfgMusic = [];
 
-_cfgMusic pushBack format ["Last updated: {{GVI|arma3|%1}}", (productVersion select 2) / 100];
+_cfgMusic pushBack ([] call BIKI_fnc_lastUpdatedGVI);
 _cfgMusic pushBack format ["{| class=""wikitable sortable"" width=""100%1""", "%"];
 _cfgMusic pushBack format ["! width=""5%1"" |No.", "%"];
 _cfgMusic pushBack format ["! width=""35%1"" |Title", "%"];

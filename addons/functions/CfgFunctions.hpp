@@ -14,6 +14,11 @@ class CfgFunctions
 			class getFunctionSection;
 			class parseFunctionHeader;
 		};
+		class Helpers
+		{
+			file = QPATHTOF(Helpers);
+			class lastUpdatedGVI;
+		};
 		class Images
 		{
 			file = QPATHTOF(Images);
